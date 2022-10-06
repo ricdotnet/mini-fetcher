@@ -7,10 +7,6 @@ const userAgent = {
 };
 
 const request = (url, options) => new Promise((resolve, reject) => {
-  if (!options.hasOwnProperty('headers')) {
-    options.headers = {};
-  }
-
   const mergedHeaders = {
     headers: {
       ...options.headers, ...userAgent
