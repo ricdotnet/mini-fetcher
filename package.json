@@ -3,8 +3,14 @@
   "version": "0.0.1",
   "description": "A small wrapper around node:http to make http requests.",
   "main": "index.js",
+  "scripts": {
+    "test": "node test/index.js"
+  },
   "repository": "https://github.com/ricdotnet/mini-fetch",
   "author": "ricdotnet - https://ricr.dev",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "devDependencies": {
+    "@types/node": "^18.8.2"
+  }
 }
